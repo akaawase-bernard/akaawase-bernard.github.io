@@ -1,1 +1,0 @@
-# akaawase-bernard.github.io
