@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://jiarong-wu.github.io/sitemap.xml
