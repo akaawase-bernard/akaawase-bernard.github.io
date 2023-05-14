@@ -1,5 +1,6 @@
 # Personal Website
 
+
 This is the repository for my personal website hosted on GitHub Pages. The website showcases my portfolio, projects, and other relevant information about me.
 
 ## Table of Contents
@@ -10,6 +11,7 @@ This is the repository for my personal website hosted on GitHub Pages. The websi
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Star and Fork](#star-and-fork)
 
 ## Website Link
 
@@ -45,3 +47,7 @@ Contributions are welcome! If you find any issues with the website or have sugge
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Star and Fork
+
+If you find this project useful or interesting, please consider starring the repository and forking it for your own use. Your support is greatly appreciated!
