@@ -1,0 +1,80 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+  text-decoration: underline;
+  color: #99ccff;
+}
+
+main {
+  padding: 40px 10%;
+  background-color: #f5faff;
+  min-height: 80vh;
+}
+
+h2 {
+  color: #003366;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 5px;
+}
+
+.bibliography {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.bibliography li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.bibliography a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bibliography a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.projects ul {
+  padding-left: 1.5em;
+  line-height: 1.8;
+}
+
+.projects li {
+  margin-bottom: 15px;
+}
