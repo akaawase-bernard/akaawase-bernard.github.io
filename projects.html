@@ -4,6 +4,40 @@
   <meta charset="UTF-8">
   <title>Projects - Bernard Akaawase</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Responsive YouTube video container */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      margin-top: 15px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    /* Project image styling */
+    .project-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    /* Description spacing */
+    .project-description {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body style="background-color: #f5fbff;">
   <header>
@@ -21,17 +55,36 @@
       <h2>Selected Projects</h2>
       <ul>
         <li>
-          <strong>Directional Phase-Resolved Observations of Breaking Waves</strong><br>
-          Assisted in developing software and hardware for data acquisition and analysis. The stereo IR and visible camera system is deployed at ASIT MVCO. 
+          <strong>Directional Phase-Resolved Observations of Breaking Waves</strong>
+          
+          <!-- Project image -->
+          <img src="assets/img/wass3d_field_v1.png" alt="Directional Phase-Resolved Observations" class="project-image">
+          
+          <!-- Description -->
+          <p class="project-description">
+            Assisted in developing software and hardware for data acquisition and analysis. 
+            The stereo IR and visible camera system is deployed at ASIT MVCO.
+          </p>
+          
+          <!-- Embedded YouTube video with autoplay, mute, and loop -->
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/6Kb785LK87Q?playlist=6Kb785LK87Q&loop=1&autoplay=1&mute=1" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
         </li>
+
         <li>
-          <strong>Wave Flume </strong><br>
+          <strong>Wave Flume</strong><br>
           Designed and built a 1-meter demo wave tank with controllable plunger for lab-based wave generation and dissipation experiments.
         </li>
-  
+
         <li>
           <strong>Portable Airborne Mapping System</strong><br>
-          Designed standalone payload for ariael mapping. 
+          Designed standalone payload for aerial mapping. 
         </li>
       </ul>
     </section>
