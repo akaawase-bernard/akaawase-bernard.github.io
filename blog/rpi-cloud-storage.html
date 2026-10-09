@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Built My Own Private Cloud for the Price of a Hard Drive - Bernard Akaawase</title>
+  <meta name="description" content="How I turned a Raspberry Pi and a 2TB drive into a private cloud with Nextcloud and Tailscale, and what I learned along the way.">
+  <link rel="canonical" href="https://akaawase-bernard.github.io/blog/rpi-cloud-storage.html">
+  <!-- Preview card for LinkedIn and other sites -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="I Built My Own Private Cloud for the Price of a Hard Drive">
+  <meta property="og:description" content="How I turned a Raspberry Pi and a 2TB drive into a private cloud with Nextcloud and Tailscale, and what I learned along the way.">
+  <meta property="og:url" content="https://akaawase-bernard.github.io/blog/rpi-cloud-storage.html">
+  <meta property="og:site_name" content="Bernard Akaawase">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+  <style>
+    .share { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ccd; }
+    .share-btn { display: inline-block; margin-left: 0.6rem; padding: 0.4rem 0.9rem; background: #0a66c2;
+                 color: #fff !important; border-radius: 4px; text-decoration: none; font-size: 0.95rem; }
+    .share-btn:hover { background: #004182; }
+    .post { max-width: 760px; line-height: 1.75; font-size: 1.08rem; }
+    .post p { margin-bottom: 1.2rem; }
+    .post-date { color: #666; font-style: italic; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body style="background-color: #f5fbff;">
+  <header>
+    <h1>Blog</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../teaching.html">Teaching</a>
+      <a href="../blog.html" class="active">Blog</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="post">
+      <h2>I Built My Own Private Cloud for the Price of a Hard Drive</h2>
+      <p class="post-date">October 9, 2026</p>
+
+      <p>
+        For years I paid, or put up with limited free storage, to keep my files, photos, and research on someone
+        else's servers. Then I realized I had a Raspberry Pi sitting on my desk. With a 2TB drive plugged in, it now
+        works as my own private cloud, which I can reach from anywhere.
+      </p>
+
+      <p>
+        The setup is simple. I used a Raspberry Pi 4B, a computer the size of a deck of cards that sips electricity, and
+        a 2TB external drive for storage. On the software side, I run Nextcloud, free open-source software that works
+        like Google Drive or Dropbox, and Tailscale, a free tool that lets my devices reach the Pi securely from
+        anywhere. The Pi and the drive were the only hardware I needed, and everything else was free software.
+      </p>
+
+      <p>
+        The Pi sits at home, connected to my router, running Nextcloud, and the drive holds the files. Tailscale creates
+        a private, encrypted tunnel between the Pi and my phone and laptop, so I can reach my files from a café or on
+        mobile data without exposing the Pi to the open internet. That matters because a home server that is directly
+        reachable online is a target. With Tailscale, only my own devices can see it.
+      </p>
+
+      <p>
+        I use it every day. My laptop syncs research and document folders to the Pi, just like Dropbox, so my work is
+        always in sync. My iPhone uploads new photos automatically, so I'm no longer paying for photo storage. Family
+        members each get their own account, so photos and files stay private.
+      </p>
+
+      <p>
+        I made a few mistakes along the way. My first attempt had the drive mounting in the wrong place, and files would
+        have quietly filled the Pi's small memory card instead of the 2TB drive, so I now always check where storage is
+        actually mounted before saving anything. The first file-sharing app I tried also turned out to be shutting
+        down, with no more security fixes coming. That's not something you want guarding your files, so I switched to
+        Nextcloud, which is actively maintained. And I would not skip the boring security steps: use strong passwords,
+        keep software updated, and never open your router to the internet just for convenience.
+      </p>
+
+      <p>
+        Is it really free? Not quite, but nearly. You pay a few dollars a year in electricity and need a home internet
+        connection. Your home upload speed also sets how fast files come back to you when you're away, so a slow
+        connection will feel slow.
+      </p>
+
+      <p>
+        The most important thing to remember is that syncing is not backup. If you delete a file on one device, it can
+        vanish everywhere, and if the drive fails, everything on it is gone. A private cloud is convenient, but you
+        should keep a second copy of anything important on another drive or a different service. I treat the Pi as my
+        main storage and keep a separate backup for the work I can't afford to lose.
+      </p>
+
+      <p>
+        Should you try it? If you're comfortable following step-by-step instructions and typing a few commands, yes. It
+        took me an afternoon, most of it spent fixing small mistakes, and I came out with storage I control, no monthly
+        fee, and a better understanding of how the cloud actually works. If you have a spare Raspberry Pi, this is a
+        great weekend project.
+      </p>
+
+      <p class="share">
+        <strong>Share this post:</strong>
+        <a class="share-btn" target="_blank" rel="noopener"
+           href="https://www.linkedin.com/feed/?shareActive=true&text=I%20Built%20My%20Own%20Private%20Cloud%20for%20the%20Price%20of%20a%20Hard%20Drive%20https%3A%2F%2Fakaawase-bernard.github.io%2Fblog%2Frpi-cloud-storage.html">
+          <i class="fab fa-linkedin"></i> Share on LinkedIn
+        </a>
+      </p>
+
+      <p><a href="../blog.html">&larr; Back to Blog</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Bernard Akaawase</p>
+  </footer>
+</body>
+</html>
